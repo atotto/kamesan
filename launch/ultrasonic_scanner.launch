@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+
+<launch>
+  <node pkg="kamesan" name="ultrasonic_scanner" type="ultrasonic_scanner.py"/>
+  <node pkg="tf" type="static_transform_publisher" name="base_frame_2_laser_frame" args="0 0 0 0 0 0 /base_frame /laser_frame 1000"/> 
+</launch>
