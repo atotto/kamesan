@@ -87,7 +87,7 @@ class KameOdometer():
         with self.lock:
             move_x = px2m(self.mouse_x)
             move_y = 0.0
-            move_th = px2m(self.mouse_y)/0.1 # r=0.1
+            move_th = px2m(self.mouse_y)/0.08 # r=0.08
             self.mouse_x = 0
             self.mouse_y = 0
 
